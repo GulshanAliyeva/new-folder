@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>MAPDIV</title>
+  </head>
+  <body>
+    <!-- Tutaqki veb səhifəmizdə bir şəkil var ve onu etiketlemek ve ya link olaraq qeyd etmek isteyirik -->
+    <!-- Bunun üçün birinci şekl vermeliyik daha sonra onu etiketlemeliyik usemap="#ad"  bu parametr ile sekle etiket yonlendire bilerik -->
+    <!-- Maplarin təyin olunması <map name="ad ></map>"  olur bu teqle seklimize xerite qeyd ede bilerik bu teq xeriteleri teyin edir.Bu teq daxilinde teyin 
+        etdiyimiz name parametrini hansi resme usemap deyeri olaraq gondersek teyin etdiyimiz linkler o resm uzerinde gorunecek-->
+    <!-- <img src="/Baza/img/snap.jpg" usemap="#ad"/>
+    <map name="ad">
+        <are snape="rect" coords="10,10,200,100" href="https://www.facebook.com">
+    </map>
+     -->
+    <!-- <div style="background-color: red; width:  150px; height: 250px;">
+      <p>Lorem ipsum dolor sit amet.</p>
+</div>
+<div style="background-color: green; width:  150px; height: 250px;">
+  <p>Lorem ipsum dolor sit amet.</p> -->
+</div>
+<!-- Formun 2 metodu var get və post.Get məlumatlar açıq şəkildə göndərmək üçün post isə gizli şəkildə göndərmək üçün işlədilir -->
+<!-- Text mətn yazmaq üçündür -->
+<!-- formlar yəni  -->
+<form>
+  <label for="İstifadeci"> username</label> <br>
+  <input type="text" name="user" id="istifadeci"><br>
+  <input type="password" name="pass"  placeholder="Sifre daxil edin.."> 
+  <!-- pasword parolu gizli yazmaq ucundu  -->
+  <!-- <input type="submit" value="Gonder" >   -->
+    <!-- placeholder arxa fonda yazi olmaqi ucundu ve bunu her yerde istifade ede bilerik
+    ve parolu yazdigimiz zaman arxa fondan silinecekdir  -->
+  <!-- Value tipe verilen dəyərdi submit gönder demekdi ona dəyər olaraq 
+    value gönder desek submitin deyeri göndər olacaq -->
+    <input type="number" min="18" max="50">
+    <input type="date" name="dogumtarixi">
+    <input type="email" name="mail"> <br><br>
+    <!-- tutaqki hansisa formu doldururuq ve orda vacib olan xanalarin vacibliyini belirtmek isteyirik 
+    bunun ucun required istifade edirik -->
+    <!-- araliq vermek isteyende inputun tipine range (araliq) araligin minumumu ve maximumu 
+      secirik step=1 tutaqki(addimlari sece bilerik) name adini ve adinin deyerini value qeyd ederik -->
+      -<input type="range" min="0" max="10" step="1" name="addim" value="5"> +
+<input type="file" name="file">
+<!-- inputun file  tipi fayllarin elave edilmesi ucundu.eger coxlu sayda fayl 
+  elave etmek lazimdirsa multiple(coxlusayda) qeyd edirik-->
+<input type="file" name="file" multiple>
+      <input type="submit" value="Gonder" />
+</form>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-positions</title>
+<style>
+ #umumi {
+    height: 600px;
+    width: 600px;
+border: 2px solid black;
+margin:auto; 
+position: relative;
+}
+#bir{
+    position:absolute; 
+    width: 150px;
+    height: 150px;
+    left: 0;
+    top: 0;
+    background-color: blueviolet;
+}
+#iki{
+    position:absolute; 
+    width: 150px;
+    height: 150px;
+    left: 0;
+    bottom: 0;
+    background-color: blue;
+}
+
+#uc{
+    position:absolute; 
+    width: 150px;
+    height: 150px;
+    right: 0;
+    top: 0;
+    background-color: aqua;
+}
+#dord{
+    position:absolute;
+    width: 150px;
+    height: 150px;
+    right: 0;
+    bottom: 0;
+    background-color: brown;
+}
+
+</style>
+</head>
+<body>
+    <!-- positions-movqe demekdi
+    relative qohum,absolute-mutleq vacib
+1.Bir div yaradaq ve o divin icerisinde 4 div daha olsun her biri ise umumi divin divarlarina mohkemlenmis olsun
+ilk novbede idsi umumi olan div yaradiriq ve daha sonra icerisinde 4 div daha yaradaraq her birine id veririk.
+id-yalnizca bir seye aid olan demekdi -->
+<!-- 2.novbeti olaraq head icerisinde yaratdigimiz umumi divine stylda size ve borderine olcu vererek solidini black edek
+ 3.merkeze getrmek ucun xaricden margine auto vererek texmini merkeze getirek
+4.Novbeti olaraq yaratdigimiz diger divleri umuminin icerisine salmaq ucun positionuna relative deyek
+5.indi ise diger divleri icerisine salmaq ucun divin idsini yazaq ve olcu, leftini topdan bottomdan  0 edek positions ve 
+reng verek
+6.positiona relativ idlere absolute verende qohumlari bir birine baglayirsan-->
+    <div id="umumi">
+        <div id="bir"></div>
+        <div id="iki"></div>
+        <div id="uc"></div>
+        <div id="dord"></div>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+body {
+  background: rgb(0, 87, 128, 0.466) url(download.png) right bottom/100px
+    no-repeat fixed;
+  background: rgb(56, 22, 119) url(download.png) right bottom/100px no-repeat
+    fixed;
+  /* color ucun rgb-den istifade ede bilerik 140 color var */
+}

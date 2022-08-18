@@ -1,0 +1,21 @@
+body {
+    /* background-color: bisque;
+  background-image: url(download.png);
+  /* backgroun-image: url() fona sekil logo elave etek ucundur/urle ise seklin ve ya logonun unvanini vermek ucun istifade edilir */
+  /* backgroun: size 100px; */
+  /* background-repeat: no-repeat; */
+  /* background-repeat:no-repeat ise sekl ve ya logonun tekrarlanmasini istemirikse istifade edirik  */
+/* background-attachment: fixed;  */
+/* background-attachment:fixed logonu ve ya sekli sabitlemek ucundu/sabitlediyimiz zaman skrolnan birge hereket edecek 
+attachment-qosma/fixed-sabit */
+/* background-position: right; */
+/* fonun istiqametini saga getirmek ucun istifade edilir */
+/* background-position: right bottom; */
+/* fonun istiqametini hem saga getirib hemde asagida etmek ucun right bottom isledilir/bottom-alt demekdi */
+/* bu yazdiqlarimizin her birini bir tek backgroundun daxilinde ardicilliqla yaza bilerik.
+Ardicilliq zamani 1-ci seklin unvani gelmelidi.Eger unvandan qabag background:color isledilibse o zaman color gelecek daha sonra
+seklin unvani yeni url() sonra position yeni istiqamet eger olcu varsa slash/ isaresin qoyub pxlle olcunu yazrq
+sonra repeat(tekrarlanmaq) yazilir yeni no-repeat fixed
+/* bunlar yazildigi zaman uzun uzadi digerlerini yazmaqa ehtiyac yoxdu */
+background: bisque url(download.png) right bottom/100px no-repeat fixed;
+}

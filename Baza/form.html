@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <!-- Formun 2 metodu var get və post.Get məlumatlar açıq şəkildə göndərmək üçün post isə gizli şəkildə göndərmək üçün işlədilir -->
+    <!-- Text mətn yazmaq üçündür -->
+    <!-- formlar yəni  -->
+    <form>
+      <label for="istifadeci">username</label> <br />
+      <input type="text" name="user" id="istifadeci" /><br />
+      <input type="password" name="pass" placeholder="Sifre daxil edin.." />
+      <input type="number" min="18" max="50" />
+      <input type="date" name="dogumtarixi" />
+      <input type="email" name="mail" /> <br /><br />
+      <input type="file" name="file" /> <br /><br />
+      -<input type="range" min="0" max="10" step="1" name="addim" value="5" /> +
+      <input type="file" name="file" multiple />
+      <br /><br />
+
+      <label><input type="radio" value="Kisi" name="cins" />Kişi</label>
+      <label><input type="radio" value="Qadin" name="cins" />Qadın</label>
+    </form>
+    <br /><br />
+    <form>
+      <label for="name">Kullanici</label>
+      <input type="text" id="name" name="ad" />
+      <button type="reset">reset</button><br />
+      <textarea cols="30" rows="10"></textarea>
+      <input type="submit" value="Gonder" />
+    </form>
+    <br />
+    <br />
+    <form>
+      <ol>
+        <li>
+          kitab oxumaq<input
+            type="checkbox"
+            name="hobby"
+            value="kitab oxumaq"
+          />
+        </li>
+        <li>
+          ders oxumaq<input type="checkbox" name="hobby" value="ders oxumaq" />
+        </li>
+        <li>gezmek<input type="checkbox" name="hobby" value="gezmek" /></li>
+        <li>yatmaq<input type="checkbox" name="hobby" value="yatmaq" /></li>
+      </ol>
+      <select>
+        <option value="Baku">Baku</option>
+        <option value="Sumqayit">Sumqayit</option>
+        <option value="Zengilan">Zengilan</option>
+        <option value="Qarabag">Qarabag</option>
+        <option value="Fizuli">Fizuli</option>
+        <option value="Xizi">Xizi</option>
+      </select>
+      <br /><br />
+      <input list="Makyaj" />
+      <datalist id="Makyaj">
+        <option value="Tuj"></option>
+        <option value="pamada"></option>
+        <option value="layner"></option>
+        <option value="haylaytr"></option>
+        <option value="rumyana"></option>
+      </datalist>
+      <br />
+      <br />
+    </form>
+    <!-- datalist siyahidan secim etmek olur ve ya ozumuzde qeyd ede bilerik -->
+    <!-- select secin demekdi.Option-secim. Selectedi hansi seherin qabagina yazsaq birinci o gelecek.
+-->
+    <!-- checkbox  bir ve ya bir nece secim imkani vermek ucundu checked ise default olaraq secim edilmesi ucun -->
+    <!-- pasword parolu gizli yazmaq ucundu  -->
+    <!-- <input type="submit" value="Gonder" >   -->
+    <!-- placeholder arxa fonda yazi olmaqi ucundu ve bunu her yerde istifade ede bilerik
+        ve parolu yazdigimiz zaman arxa fondan silinecekdir  -->
+    <!-- Value tipe verilen dəyərdi submit gönder demekdi ona dəyər olaraq 
+            value gönder desek submitin deyeri göndər olacaq -->
+    <!-- tutaqki hansisa formu doldururuq ve orda vacib olan xanalarin vacibliyini belirtmek isteyirik 
+        bunun ucun required istifade edirik -->
+    <!-- araliq vermek isteyende inputun tipine range (araliq) araligin minumumu ve maximumu 
+            secirik step=1 tutaqki(addimlari sece bilerik) name adini ve adinin deyerini value qeyd ederik -->
+    <!-- inputun file  tipi fayllarin elave edilmesi ucundu.eger coxlu sayda fayl 
+                elave etmek lazimdirsa multiple(coxlusayda) qeyd edirik-->
+  </body>
+</html>

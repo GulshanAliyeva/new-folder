@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+/*  */
+ul{
+    list-style: none;
+}
+/* stylda *ile umumi olaraq bodynin paddingini ve marginini 0 edek
+daha sonra textlerin altindaki xetti yeni text decoration(bezek) ile silek
+novbeti olaraq background coloruna reng verek
+ul inline oldugu ucun displayini block edekki menyularimizi yarada bilek
+width olcu verdikden sonra text-align center ederik/padding ve margine ölçü verdik 
+float left(sola üzmək) ilə menyuları soldan saga düzdük.Daha sonra ul-nin list stylını none eledik ki,itsin işareler
+ul a-nın border radius(serhed ölçüsünə) faizle ölçü verdik yuxarı sağ aşağı sol
+serheddine 1px  dotted(nöqtəli) verdik rengini black eledik
+sonda ise ul a-na hover(üstüne toxunanda deyissin) border radius verdik yuxarı 0,sağ 0,aşağı 25,sol 25  */
+ul a{
+    text-decoration: none;
+    background-color: rgb(110, 91, 126);
+    color: white;
+    display: block;
+    width: 200px;
+    text-align: center;
+    padding: 30px;
+    margin: 20px;
+    float: left;
+    border-radius: 25% 0 25%  0;
+    border: 1px dotted black;
+}
+ul a:hover {
+    border-radius: 0 25% 0 25%;
+}
+
+/* 
+* {
+    margin: 0;
+    padding: 0%;
+}
+body{
+    background-size: cover;
+    background-image: url(); */
+    /* height: 100px; */
+/* } */
+h1{
+    color: black;
+    /* text-align: center; */
+}
+/* div{
+    margin: 0%;
+    padding: 0%;
+    background-color:whitesmoke;
+    height: 50px;
+    text-align: center;
+    
+} */
+/* div a{
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    margin-left: 30px;
+} */

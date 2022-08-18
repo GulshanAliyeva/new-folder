@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-combinators</title>
+<style>
+/* #x > p{
+    color: red;
+} */
+
+/* #x + p{
+    color: red;
+/* } */ 
+#x~p{
+    color: red;
+} 
+
+
+
+</style>
+</head>
+<body>
+<!--1. bir div icerisinde 2 paragraf yaradaq ve hemin div icerisinde bir div ve icerisinde paraqraf yene yaradaq.elave olaraqda
+ayrica 2 paraqraf yaradaq
+2.headda stylin icerisinde divin p taglarinin colorunu red edek
+3.dive id vererekde bunu ede bilerik,yenede isleyecek
+4.Tutaqki isteyirikki yalnizca id verdiyimiz div icerisindeki plerin rengi qirmizi olsun o zaman stylda
+#x> p coloruna red vere bilerik baxaq-->
+<!-- 5.Eger biz id verdiyimiz divden sonraki ilk paraqrafin colorunu red etmek isteyirikse bu zaman
+ #x+p stylda colorunu red edeceyik baxaq.
+ 6.Yox eger biz id verdiyimiz divden sonra gelen her iki paraqrafin colorunu red etmek isteyirikse o zaman 
+ #x ~ p stylinda ise colorunu red edirik.baxaq 
+-->
+<div id="x">
+    <p>Lorem ipsum dolor sit amet.1</p>
+    <p>Lorem ipsum dolor sit amet.2</p>
+   <div> <p>Lorem ipsum dolor sit amet.3</p></div>
+</div>
+<p>Lorem ipsum dolor sit amet.5</p>
+<p>Lorem ipsum dolor sit amet.4</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

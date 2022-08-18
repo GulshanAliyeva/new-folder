@@ -1,0 +1,93 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8" />
+      <title>Tablolar</title>
+    </head>
+    <body>
+      <table
+        border="5"
+        bordercolor="blue"
+        width="250"
+        height="250"
+        cellspacing="15"
+        align="center"
+      >
+        <caption>
+          Tablolar cedveli
+        </caption>
+        <tbody>
+          <th>Ad</th>
+          <th>Soy ad</th>
+          <th>Ata adı</th>
+          <tr>
+            <!-- colspan xanaları sətr üzrə birləşdirmək üçün  -->
+            <td colspan="2">Gulshan</td>
+            <td>Aliyeva</td>
+            <td>Sahin</td>
+          </tr>
+          <tr>
+            <td>Sevda</td>
+            <td>Haciyeva</td>
+            <td>Xammed</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Tabloları table tagi içərisində hazırlayırıq.tbody tagi tablonun gövdəsini təyin edir -->
+      <table
+        border="1"
+        bordercolor="green"
+        width="20"
+        height="20"
+        cellpadding="20"
+        cellspacing="0"
+        align="center"
+      >
+        <!-- cellpadding yazı ilə xana arasında məsafə  xanalar arası məsafə -->
+        <!-- cellspacingxanalar arası məsafə  -->
+        <caption align="top">
+          Family
+        </caption>
+<!-- caption align içində 2 hal alır.Adın aşağıda olması üçün bottom,yuxarda olmasın istəyiriksə top 
+  parametri istifadə olunur -->
+        <tbody>
+          <!-- th stün başlıqlarına ad vermek üçünd -->
+          <th>Ad</th>
+          <th>Soyad</th>
+          <th align="left">Yaş</th>
+          <!-- caption tabloya ad vermek üçündü -->
+          <!-- tr sətirləri müəyyən etmək üçündü -->
+          <!-- td stünları müəyyən etmək üçün -->
+          <!-- border table ölçü vermek üçün  -->
+          <!-- bordercolorda taboya rəng vermək üçün  -->
+          <!-- tabloda sətir xanalarını collspanla birləşdirirlər -->
+          <tr align="left">
+            <!-- rowspan xanaları stün üzrə birləşdirmək üçün  -->
+            <!-- tr align td align th align  bu üçünden birine verilibse parametr yazıldığı teqin daxilində olan yazıların yerini dəyişəcək -->
+            <td>Gulshan</td>
+            <td align="center">Aliyeva</td>
+            <td>23</td>
+          </tr>
+          <tr>
+            <td>Jasmin</td>
+            <td>Qulizade</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Sevda</td>
+            <td>Haciyeva</td>
+            <td>51</td>
+          </tr>
+          <tr>
+            <!-- &nbsp qarşılığı boşluqdur tabloda informasiya olmadıqda xananın boş qalması üçün əlavə edilir+ bu tek 
+              burda deyil digər teqlərdə də istifadə edilə bilər və qarşılığı boşluq olaraq qayıdacaqdır  -->
+            <td>&nbsp</td>
+            <td>&nbsp</td>
+            <td>&nbsp</td>
+          </tr>
+        </tbody>
+      </table>
+    </body>
+  </html>
+</DOCTYPE>

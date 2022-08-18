@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS-Display</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      ul {
+        list-style: none;
+        padding: 0%;
+      }
+      a {
+        text-decoration: none;
+        /* mətn dekorasiyası*/
+        background-color: blueviolet;
+        width: 200px;
+        /* inline elementlere width vermek olmur */
+        /* display: block; dediyimiz zaman inline element blok elemente cevrilir/eyni zamanda blok elementin displayine
+                display inline versek o inline elemente cevrilecek */
+        /* display inline ve block elementleri bir birine deyismek ucundu */
+        display: block;
+        margin: 16px;
+      }
+      h1 {
+        background-color: red;
+        display: inline;
+      }
+      b {
+        background-color: orange;
+        height: 30px;
+        display: inline-block;
+        padding: 20px;
+        /* olcusunu   heightini hundurluyunu deyismek istesek bele alinmayacaq cunki inline elementdir
+    bunun ucun display block etsek buda duzgun olmaz ve istediyimiz netice alinmaz
+     bunun ucun display inline-block istifade edirik/Bele oldugu zaman hem blok hemde inline olur ve biz hundurluyu vere bilirik
+     eyni zamanda daxilden mesafe vere bilerik padding vasitesi ile
+     bir setirde olur ve bir setr rolunu oynayir */
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">home</a></li>
+      <li><a href="#">about</a></li>
+      <li><a href="#">blog </a></li>
+      <li><a href="#">contact</a></li>
+    </ul>
+    <hr />
+    <h1>CSS display</h1>
+    <hr />
+    <!-- bezen hem blok hemde inline elemek lazim olur bu zaman -->
+    <p>
+      Lorem, ipsum dolor <b>sit amet</b> consectetur adipisicing elit. Aut
+      inventore voluptatibus assumenda at. Sit totam tenetur nostrum dolorum
+      voluptatum cum architecto mollitia facere explicabo, eum, velit non quis,
+      et ex!
+    </p>
+  </body>
+</html>

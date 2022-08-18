@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta adı baxış pəncərəsinin məzmunu eni ilkin miqyasda eni tərtib edir
+    1.content-mezmun
+2.viewport-baxis penceresi
+3.device-qurgu
+4.initial-scale-ilkin miqyasli -->
+    <title>HTML video</title>
+  </head>
+
+  <body>
+    <!--sehifeye video elave etmek ucun video src teqinden istifade edirik 
+    videoya width height vere bilerik eyni zamanda controls(idare etmek) elave ederek videomuzu idare ede sesini azalda videonu 
+asagi sehifeye kecirde bilerik
+autoplay(avtomatik ifa) ile ise videonu bitdiyi zaman yeniden basladir-->
+    <video src="#" width="350" height="350" controls autoplay>
+      Sizin brauzer bu videonu desteklemir
+    </video>
+    <hr />
+    <!-- eyni zamanda audio elave ede bilerik sehifeye  -->
+    <audio src="#" controls></audio>
+    <!-- srce audionun unvanini veririk control vasitesi ile idare ede bilirik -->
+    <hr />
+
+    <!-- iframe-de sehifeye video elave etmek ucun isledilir bu zaman youtuba gedib video icerisinde paylas hissesine kecid edib yerlesdir
+secerek iframe kodunu goturub sehifemize elave ede bilerik/HTml 5 le elaqesi demek olar yoxdu,lakin diger video elave etdiyimiz
+halda serverde yer azligi yasana bileceyinden iframe vasitesi ile videolari elave etmek daha meqsede uygundu -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/sNm0tdu7_s0"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

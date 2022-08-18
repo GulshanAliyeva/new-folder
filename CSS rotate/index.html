@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+       <title>CSS Rotate</title>
+    </head>
+    <style>
+        div{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            /* transform: rotate(-5deg); */
+            margin-top: 100px;
+            margin-left: 100px;
+           /* transform: scale(2,2); */
+           /* property-value deyeri qoruyub saxlamaq ucundur/property olmasa deyer islemez */
+           /* transform: skew(35deg); */
+           /* transform: skew(-35deg); */
+       transform: matrix(.5,1,1.5,.5,2);
+           /* matrix birinci qəbul edir scalenin X-ni,skewin Y-ni,skewin Xni,scalenin y-ni,translaten X,translate y */
+        }
+    </style>
+
+<body>
+
+<!-- 1. Rotate DIVleri firlatmaq ucundu
+ transform: rotate(-5deg);5 derece yazdiqda -5 derece sola eyilecek
+2. Scale(miqyas) divi x,y oxu uzre miqyasini boyutmek ve ya kiciltmek ucundur
+scaleye x,y uzre 2,2 olcusunu versek divin miqyasi iki qat boyuyecek/Yoxlayaq 
+divin icerisinde yazı yazdığımız zaman scale miqyasi böyük olarsa görünmeyecek görünmesi üçün margine topdan value veririk ve baxırıq
+eyni zamanda scale ölçünü kiçiltmek üçün 0.5,0.5 formasında da ölçü vermek olar bu zaman 0-ı yazmağa ehtiyac yoxdu.Rəqəm nə qədər 0.5 kimi 
+yazilanlarda ne qeder reqem böyük yazılarsa miqyas o qeder kicilir.Yəni 0.10 yazsaq ölçü birazda kiçiləcəkdir
+scaleyə 1.5.1 kimi ölçü verdikdə isə dartılma olacaqdır-->
+<!--3.Transform: skew(35deg) (eyilmek maili) transformun skew funksiyasi maili eyilme ucun isledilir eger 35 derece secsek saga dogru maili eyilecek 
+-35 deg secsek sola dogru o derece eyilecekdir/baxaq -->
+<!--4. Matrix funksiyası vasitəsi ilə isə  qeyd etdiyimiz scale(miqyas),skew(maili eymek)  translate bunları biryerdə yazaraq value vermək mümkündü
+baxaq.matrix birinci qəbul edir scalenin X-ni,skewin Y-ni,skewin Xni,scalenin y-ni,translaten X,translate y -->
+<div>Lorem ipsum dolor sit amet.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

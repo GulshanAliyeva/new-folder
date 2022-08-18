@@ -1,0 +1,27 @@
+h1 {
+  font-family: "Square Peg", cursive;
+  font-size: 46px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* sans serif ise cixinti olmayandi */
+  /* font-family: 'Times New Roman', Times, serif; */
+  /* times new roman serifdi yeni cixintisi olan
+    dirnag arasinda yazilir bele oldugu zaman o demekdirki bunlar soz birlesmesidir yeni bir butundu */
+  /* burdaki fontlardan istifade etmek istemediyimiz zaman fonts.google.com saytindan fontlar goture bilerik pulsuzlardan */
+}
+/*demeli fontun weightini olcusunu setrlerarasi mesafeni(line-height),absazlar arasi mesafeni(text indent) yaza bilerik
+font olanlari   tek bir halda yazmaq mumkundur  */
+p {
+  /* font-family:'Courier New', Courier, monospace ;
+font: size 16px;
+font-weight: 500;
+font-style: italic;
+line-height: 1.5;
+text-indent: 40px;
+background-color: blueviolet; */
+  /* margin: 20px 10px 30px 40px; */
+  font: italic 900 16px "Courier New", Courier, monospace;
+  /* 1) fontun formasi 
+2) weight
+3) sized
+4) fontun novu-yeni yazinin novu*/
+}
